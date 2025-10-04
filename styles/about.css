@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* --- Hero Section Styles --- */
+.hero-section {
+    background-color: whitesmoke;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 7%;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.navbar-title h2 {
+    font-size: var(--normal-size);
+}
+
+.navbar-links a {
+    margin-left: 2.5rem;
+    font-size: var(--normal-size);
+}
+
+/* Styling untuk Tautan Navigasi Aktif */
+.navbar-links a.active {
+    font-weight: 700; 
+    border-bottom: 2px solid black; 
+    padding-bottom: 4px; 
+}
+
+/* Hero Info */
+.hero-info {
+    text-align: center;
+    margin: auto; 
+    margin: 100px;
+}
+
+.hero-info h1 {
+    font-size:var(--medium-size);
+    line-height: 1.2;
+    
+}
+
+.hero-info .hero-paragraf {
+    font-size: var(--small-size);
+    line-height: 1.5;
+    margin-top: 50px;
+
+}
+
+
+/* Hero Footer */
+.hero-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: var(--small-size);
+    letter-spacing: 0.1em;
+    color: grey;
+}
+
+/* Atur link tengah secara spesifik */
+.hero-footer .scroll-link {
+    display: flex;         
+    align-items: center;   
+    gap: 0.5rem;           
+}
