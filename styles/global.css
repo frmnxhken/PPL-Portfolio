@@ -1,0 +1,32 @@
+/* 
+
+Ini adalah file konfigurasi global css
+Harap jangan dirubah-rubah file ini.
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background-color: "#F4F4F4";
+    --primary-color: "#000000";
+    --base-color: "#737373";
+    --accent-color: "#D4D4D4";
+    --max-screen: 1200px;
+    --extra-size: 96px;
+    --large-size: 64px;
+    --medium-size: 48px;
+    --normal-size: 20px;
+    --small-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--background-color);
+}
