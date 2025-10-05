@@ -270,24 +270,7 @@ a {
     color: #cccccc;
 }
 
-/* --- Penyesuaian Responsif untuk Bagian Tim --- */
-@media (max-width: 992px) {
-    .content-team {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-@media (max-width: 768px) {
-    .content-team {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .content-team {
-        grid-template-columns: 1fr;
-    }
-}
 
 
 
@@ -385,5 +368,53 @@ lebar 768px atau lebih kecil (tablet dan mobile).
 
     .about-info p {
         font-size: 1.25rem; /* Perkecil font di bagian about */
+    }
+}
+
+
+
+/* --- Penyesuaian Responsif untuk Bagian Tim --- */
+@media (max-width: 992px) {
+    .content-team {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .content-team {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* footer */
+@media (max-width: 768px) {
+    .footer-section {
+        /* Kurangi padding di layar kecil */
+        padding: 4rem 5% 2rem 5%;
+    }
+
+    .footer-info {
+        /* Ubah tata letak menjadi vertikal */
+        flex-direction: column; 
+        align-items: flex-start; /* Ratakan ke kiri */
+        gap: 4rem; /* Beri jarak lebih besar antar blok */
+        margin-bottom: 4rem; /* Kurangi margin bawah */
+    }
+
+    .contact-details h1 {
+        /* Perkecil ukuran font judul "Contacts" */
+        font-size: 3.5rem; 
+    }
+
+    .next-page a {
+        /* Perkecil ukuran font "Next page" */
+        font-size: 1.25rem;
     }
 }
