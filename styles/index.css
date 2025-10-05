@@ -1,7 +1,7 @@
 .navbar {
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: var(--background-color);
     z-index: 30;
 }
 
@@ -27,6 +27,7 @@
 .navbar .navbar-links a {
     text-decoration: none;
     font-size: var(--small-size);
+    color: black;
 }
 
 .navbar-mobile {
@@ -37,7 +38,7 @@
     display: none;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--background-color);
     z-index: 30;
 }
 
@@ -75,7 +76,7 @@
     transform: translateY(-100%);
     padding: 1.5rem 1rem;
     box-sizing: border-box;
-    background-color: white;
+    background-color: var(--background-color);
     display: none;
     flex-direction: column;
     gap: 20px;
@@ -154,7 +155,7 @@
     display: flex;
     padding: 1rem;
     box-sizing: border-box;
-    color: var(--accent-color);
+    color: var(--base-color);
     font-size: var(--small-size);
     text-transform: uppercase;
 }
@@ -272,23 +273,16 @@
     }
 }
 
-.about-title {
-    font-size: 20px;
-    color: var(--primary-color);
-}
-
 .about-content {
     max-width: var(--max-screen);
     margin: auto;
 }
 
 .about-title {
-    color: var(--base-color);
     font-size: var(--medium-size);
 }
 
 .site-footer {
-    background: var(--accent-color, #f4f4f4);
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
@@ -318,7 +312,8 @@
 }
 
 .next-label {
-    font-size: 18px;
+    font-size: var(--small-size);
+    text-decoration: none;
     color: var(--base-color);
 }
 
