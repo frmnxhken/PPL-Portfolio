@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <h2>Hepta.</h2>
+        </div>
+        <div class="navbar-links">
+          <a href="/">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar-mobile">
+      <h2>Hepta.</h2>
+      <div id="toggle-menu" class="hamburger">
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+
+    <div class="navbar-mobile-links">
+      <a href="/">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
     <section class="hero">
       <div class="hero-container">
         <div class="hero-image">
@@ -105,5 +134,14 @@
         <small>Copyright 2025 Hepta Dev.</small>
       </div>
     </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("toggle-menu");
+      const navMobileLink = document.querySelector(".navbar-mobile-links");
+      toggleBtn.addEventListener("click", () => {
+        toggleBtn.classList.toggle("active");
+        navMobileLink.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

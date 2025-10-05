@@ -1,8 +1,115 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 30;
+}
+
+.navbar .navbar-container {
+    max-width: var(--max-screen);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.navbar .navbar-brand h2 {
+    font-size: var(--small-size);
+}
+
+.navbar .navbar-links {
+    display: flex;
+    column-gap: 50px;
+}
+
+.navbar .navbar-links a {
+    text-decoration: none;
+    font-size: var(--small-size);
+}
+
+.navbar-mobile {
+    position: sticky;
+    top: 0;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 30;
+}
+
+.navbar-mobile h2 {
+    font-size: 24px;
+}
+
+.navbar-mobile .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar-mobile .hamburger>div {
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.navbar-mobile .hamburger.active>div:nth-child(1) {
+    transform: translateY(-1px) rotate(45deg);
+}
+
+.navbar-mobile .hamburger.active>div:nth-child(2) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.navbar-mobile-links {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 70px;
+    transform: translateY(-100%);
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    transition: .3s;
+    z-index: 10;
+}
+
+.navbar-mobile-links.active {
+    transform: translateY(0);
+}
+
+.navbar-mobile-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+    }
+
+    .navbar-mobile-links {
+        display: flex;
+    }
+}
+
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .hero .hero-container {
