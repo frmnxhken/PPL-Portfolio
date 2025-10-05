@@ -1,0 +1,198 @@
+/* Import Font Langsung di Sini untuk Memastikan Terbaca */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+/* Pengaturan Body Spesifik untuk Portfolio */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #F8F8F8;
+    color: #111111;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container untuk membungkus konten di dalam section */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation */
+.main-header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding-top: 40px;
+}
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+.main-nav ul { list-style: none; display: flex; }
+.main-nav li { margin-left: 40px; }
+.main-nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.hero .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 140px;
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -5px;
+    margin-bottom: 24px;
+    color: #111111;
+}
+.hero p {
+    max-width: 400px;
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+}
+.hero-footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #111111;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 20px;
+}
+.scroll-down {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6b7280;
+}
+.scroll-down img { height: 14px; }
+
+/* Projects Section */
+.projects-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+.section-title {
+    font-family: "Inter", sans-serif;
+    font-size: 140px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    line-height: 0.9;
+    letter-spacing: -5px;
+    color: #111111;
+}
+.projects-section .section-title {
+    text-align: right;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 30px;
+}
+.project-item { overflow: hidden; }
+.project-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item-1 { grid-column: 1 / 4; grid-row: 1 / 3; }
+.item-2 { grid-column: 4 / 7; grid-row: 1 / 2; }
+.item-3 { grid-column: 1 / 4; grid-row: 3 / 5; }
+.item-4 { grid-column: 4 / 7; grid-row: 2 / 5; }
+.item-5 { grid-column: 1 / 3; grid-row: 5 / 6; }
+.item-6 { grid-column: 3 / 5; grid-row: 5 / 6; }
+.item-7 { grid-column: 5 / 7; grid-row: 5 / 6; }
+.item-8 { grid-column: 1 / 3; grid-row: 6 / 7; }
+.item-9 { grid-column: 3 / 7; grid-row: 6 / 7; }
+
+/* Team Section */
+.team-section {
+    padding: 80px 0;
+}
+.team-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.next-page-link {
+    text-decoration: none;
+    color: #111111;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 20px;
+}
+.next-page-link .arrow { transition: transform 0.3s ease; }
+.next-page-link .arrow img { height: 3rem; }
+.next-page-link:hover .arrow { transform: translateX(10px); }
+
+.team-info-wrapper {
+    text-align: left;
+    width: 50%;
+}
+.team-info-wrapper .section-title {
+    margin-bottom: 24px;
+    text-align: left;
+}
+.contact-info {
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.7;
+    font-weight: 400;
+}
+.contact-info p { margin: 0; }
+
+/* Footer */
+.main-footer {
+    padding: 40px 0;
+    text-align: center;
+}
+.main-footer p {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero h1, .section-title { font-size: 10vw; letter-spacing: -3px; }
+}
+@media (max-width: 768px) {
+    .container { padding-left: 20px; padding-right: 20px; }
+    .hero h1, .section-title { font-size: 15vw; letter-spacing: -2px; }
+    .project-grid { grid-template-columns: 1fr; }
+    .project-item { grid-column: auto; grid-row: auto; }
+    .team-section .container { flex-direction: column; align-items: flex-start; gap: 40px; }
+    .team-info-wrapper { text-align: left; width: 100%; }
+    .section-title { text-align: left; margin-bottom: 15px; }
+}
