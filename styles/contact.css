@@ -132,10 +132,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 var(--normal-size);
+  box-sizing: border-box;
 }
 
 .map-wrapper iframe {
-  width: 80%;
+  width: 100%;
+  max-width: var(--max-screen);
   height: calc(100vh - 350px); /* sisa tinggi setelah teks di atas */
   border: 0;
   filter: grayscale(10%) brightness(95%);
@@ -144,22 +147,88 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .contact-text {
-    flex-direction: column;
-    text-align: left;
-    gap: var(--medium-size);
+  /* Hero section mobile */
+  .hero {
+    padding: var(--medium-size) var(--small-size);
+    height: 100vh;
+    text-align: center;
   }
 
-  .info {
-    text-align: left;
+  .hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-top: var(--small-size);
+  }
+
+  .scroll-hint {
+    margin-top: var(--medium-size);
+    font-size: 0.8rem;
+  }
+
+  /* Contact section mobile */
+  .contact-section {
+    height: 100vh;
+  }
+
+  .contact-content {
+    padding: var(--small-size);
+    text-align: center;
+  }
+
+  .contact-text {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--medium-size);
+    align-items: center;
+  }
+
+  .contacts {
+    text-align: center;
   }
 
   .contacts .phone,
   .contacts .email {
-    font-size: 2rem; /* tetap responsif di mobile */
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    gap: var(--medium-size);
+    align-items: center;
+    text-align: center;
+  }
+
+  .address {
+    text-align: center;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: var(--medium-size);
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    font-size: 1.2rem;
+  }
+
+  .map-wrapper {
+    margin-top: var(--medium-size);
+    padding: 0 var(--small-size);
   }
 
   .map-wrapper iframe {
-    height: 300px; /* pas di mobile */
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
   }
 }
