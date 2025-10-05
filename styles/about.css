@@ -157,3 +157,72 @@ a {
 
 
 /* ---------------------------------------- SECTION FOOTER ---------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+--- MEDIA QUERIES FOR RESPONSIVENESS ---
+Gaya di bawah ini hanya akan aktif pada layar dengan 
+lebar 768px atau lebih kecil (tablet dan mobile).
+============================================================
+*/
+@media (max-width: 768px) {
+    
+    /* -- Variabel Font untuk Mobile -- */
+    :root {
+        --medium-size: 2.25rem; /* Perkecil font H1 */
+        --normal-size: 0.9rem;
+    }
+
+    /* -- Penyesuaian Global -- */
+    body {
+        /* Hapus max-width di mobile agar konten memenuhi layar */
+        max-width: 100%; 
+    }
+    
+    /* -- Perbaikan Hero Section -- */
+    .hero-section {
+        padding: 1.5rem 5%; /* Kurangi padding */
+    }
+
+    .navbar-menu {
+        flex-direction: column; /* Susun logo dan link secara vertikal */
+        gap: 1.5rem; /* Beri jarak antara logo dan link */
+    }
+    .navbar-links a {
+        margin-left: 1.5rem; /* Kurangi jarak antar link */
+        margin-right: 1.5rem;
+    }
+
+    .hero-info {
+        margin: 2rem 0; /* Kurangi margin vertikal */
+    }
+
+    .hero-footer {
+        flex-direction: column; /* Susun footer secara vertikal */
+        gap: 1.5rem; /* Beri jarak */
+        text-align: center;
+    }
+
+    /* -- Perbaikan About Section -- */
+    .about-section {
+        padding: 4rem 5%; /* Kurangi padding */
+    }
+
+    .about-info p {
+        font-size: 1.25rem; /* Perkecil font di bagian about */
+    }
+}
