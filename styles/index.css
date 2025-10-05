@@ -135,11 +135,12 @@
 }
 
 .about-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: auto;
+    /* make the about section fill the viewport so its content is centered vertically */
+    min-height: 100vh;
 }
 
 .about-section,
@@ -163,7 +164,7 @@
 }
 
 .about-media img {
-    width: min(800px, 90vw);
+    width: min(640px, 90vw);
     max-width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
@@ -175,9 +176,9 @@
 
 @media (min-width: 1000px) {
     .about-media img {
-        width: 800px;
-        height: 450px;
-        aspect-ratio: auto;
+        max-width: 640px;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 }
 
@@ -188,20 +189,21 @@
 }
 
 .about-title {
-    font-size: 24px;
-    line-height: 1.2;
-    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 16px;
     color: var(--primary-color);
 }
 
 .about-content {
-    max-width: 560px;
+    max-width: min(640px, 90vw);
     width: 100%;
+    margin: 0 auto;
 }
 
 .about-text {
     color: var(--base-color);
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
 }
 
