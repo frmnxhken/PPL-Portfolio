@@ -16,7 +16,7 @@ a {
 }
 
 
-/* --- Hero Section Styles --- */
+/* ------------------------ Hero Section Styles ------------------------------ */
 .hero-section {
     background-color: whitesmoke;
     height: 100vh;
@@ -90,3 +90,70 @@ a {
     align-items: center;   
     gap: 0.5rem;           
 }
+
+
+
+
+
+
+
+/* -------------------------------------- About Section Styles ----------------------------------------- */
+.about-section {
+    background-color: white;
+    padding: 6rem 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 1000px; /* Batas lebar maksimum gambar */
+    margin-bottom: 3rem;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-info {
+    max-width: 800px;
+}
+
+.about-info p {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- SECTION TIM PROFILE ------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- SECTION FOOTER ---------------------------------------------- */
