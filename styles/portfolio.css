@@ -78,7 +78,7 @@
   transform: translateY(-100%);
   padding: 1.5rem 1rem;
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--background-color);
   display: none;
   flex-direction: column;
   gap: 20px;
